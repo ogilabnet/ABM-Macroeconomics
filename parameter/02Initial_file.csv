@@ -1,0 +1,2 @@
+200,150,30,6,1,1,0,0.5,0.03,0.75,0.75,0.95,12,3000,10000,7000,7500,1.15,0.1,120,500000,20,2,5
+01:period_max,02:nconsumer,03:nretailer,04:nwholesaler,05:nequipment,06:nbank,07:min_with_drawal_rate,08:max_with_drawal_rate,09:bank_interest_rate,10:bonus_rate_min,11:bonus_rate_max,12:housyu_rate,13:n_class (d),14:Keynes_a,15:threshold_deposit,16:min_constant_wage,17:max_constant_wage,18:price_up_rate(lf),19:price_down_rate(lf),20:repay_time_ave (d),21:invest_money,22:max_ban (d),23:nmax_p (d),24:nmax_c (d)
