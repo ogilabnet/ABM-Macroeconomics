@@ -416,8 +416,8 @@ void CShow::Show_employ()
 void CShow::Write_periodfast(int i)
 {
 
-	fprintf(cpara->FI_GET_OUTPUT_Deposit(),"%d,",i);
-	fprintf(cpara->FI_GET_OUTPUT_GDP(),"%d,",i);
+	fprintf(cpara->FI_GET_OUTPUT_Deposit(),"%d,",i+1);
+	fprintf(cpara->FI_GET_OUTPUT_GDP(),"%d,",i+1);
 
 
 	///////Šú‰‚Ì‰üsAŠú”•\Ž¦‚Ì“ü—ÍŠÖ”////////
@@ -646,11 +646,7 @@ void CShow::Show_rieki_loan_first()
 	fprintf(cpara->FI_Get_loan_out(),"\n0,");
 	fprintf(cpara->FI_Get_deposit_out(),"\n0,");
 }
-void CShow::print_test()
-{
-	printf("test      aaaaaaaaaaaaaaaaaaaa          %d\n",mem_con.size());
-	printf("mem_id %d\n",mem_con[0]->Get_Agent_no());
-}
+
 void CShow::Show_zikoshihonhiritu()
 {
 	int shihon=0,kariire=0, zyouyo=0;
@@ -847,7 +843,7 @@ void CShow::Show_gdp()
 	zaiko_total=zaiko_total_r+zaiko_total_w;
 	kansetuzei=r_kansetuzei+w_kansetuzei+e_kansetuzei+b_kansetuzei;
 	fprintf(cpara->FI_GET_OUTPUT_GDP(),"%d\n",uriage_total+zaiko_total_r+zaiko_total_w);
-	fprintf(cpara->FI_GET_OUTPUT_Deposit(),"%d\n",c_yokinzan,r_yokinzan+w_yokinzan+e_yokinzan);
+	fprintf(cpara->FI_GET_OUTPUT_Deposit(),"%d,%d\n",c_yokinzan,r_yokinzan+w_yokinzan+e_yokinzan);
 
 
 
